@@ -45,7 +45,7 @@ const AreaChart = () => {
   };
 
   return (
-    <div style={{ width: '600px', margin: '0 auto' }}>
+    <div className='w-100'>
       <h2>Graphique en Aire de nuage</h2>
       <Line data={data} options={options} />
     </div>
