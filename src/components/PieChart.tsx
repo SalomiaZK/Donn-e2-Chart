@@ -14,5 +14,11 @@ export default function PieChart() {
       },
     ],
   };
-  return <Pie data={data} />;
+  return(
+    <div>
+        <h2>Description</h2>
+  <Pie data={data} className='w-50' />
+</div>
+  ) 
+
 }
