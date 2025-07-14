@@ -193,7 +193,7 @@ function App() {
   
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 p-6 sm:p-8 lg:p-10">
+    <div className="min-h-screen bg-gray-900 text-gray-100 p-6 sm:p-8 lg:p-10 w-full">
       <h1 className="text-3xl sm:text-4xl font-bold text-center text-fuchsia-400 mb-10">
         Tableau de Bord Météo
       </h1>
@@ -277,16 +277,16 @@ function App() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-        <div className="bg-gray-800 p-6 rounded-lg shadow-md aspect-video flex items-center justify-center">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-md aspect-video flex items-center justify-center h-70">
           <AreaChart data={filteredWeatherData} />
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg shadow-md aspect-video flex items-center justify-center">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-md aspect-video flex items-center justify-center h-70">
           <Histogram data={filteredWeatherData} />
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg shadow-md aspect-video flex items-center justify-center">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-md aspect-video flex items-center justify-center h-70">
           <RadarChart data={filteredWeatherData} />
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg shadow-md aspect-video flex items-center justify-center">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-md aspect-video flex items-center justify-center h-70">
           <LineChartPressure data={filteredWeatherData} />
         </div>
       </div>
