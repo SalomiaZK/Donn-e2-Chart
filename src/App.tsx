@@ -173,7 +173,7 @@ function App() {
             ))}
           </select>
         </div>
-              <div className="flex flex-wrap justify-center gap-4 mb-12 w-full">
+              <div className="flex flex-wrap justify-center gap-4 w-full">
         {metrics.map(m => (
           <div
             key={m}

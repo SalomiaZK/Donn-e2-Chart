@@ -96,11 +96,15 @@ const RadarChart = ({ data }) => { // Change prop name from meteo_data to data f
         text: 'Aperçu des Conditions Météo',
         color: '#e2e8f0', // Light text for dark background
       },
-      legend: {
-        labels: {
-          color: '#cbd5e1', // Light text for legend labels
-        }
-      },
+legend: {
+  position: 'right', // <-- C'est ça qui bouge la légende à droite
+  labels: {
+    color: '#cbd5e1',
+    boxWidth: 12,
+    padding: 2,
+  }
+}
+,
       tooltip: {
         callbacks: {
           label: function(context) {
@@ -151,10 +155,7 @@ const RadarChart = ({ data }) => { // Change prop name from meteo_data to data f
 
   return (
     // Remove fixed width style and let Tailwind CSS handle sizing
-    <div className="h-full w-full flex flex-col items-center justify-center"> {/* Use flexbox for centering content */}
-      <h2>Aperçu des Conditions Météo</h2> {/* Changed title to be more general for aggregated view */}
       <Radar className="w-full h-full" data={chartData} options={options} />
-    </div>
   );
 };
 
