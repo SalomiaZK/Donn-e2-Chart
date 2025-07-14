@@ -19,20 +19,8 @@ ChartJS.register(
   Legend
 );
 
-const AreaChart = () => {
-  const data = {
-    labels: ['Jan', 'Fév', 'Mars', 'Avril', 'Mai', 'Juin'],
-    datasets: [
-      {
-        label: 'Utilisateurs actifs',
-        data: [100, 150, 125, 180, 160, 200],
-        fill: true, // C’est ça qui transforme en area chart
-        borderColor: '#3b82f6',
-        backgroundColor: 'rgba(59, 130, 246, 0.3)',
-        tension: 0.3,
-      }
-    ]
-  };
+const AreaChart = ({data}) => {
+
 
   const options = {
     responsive: true,

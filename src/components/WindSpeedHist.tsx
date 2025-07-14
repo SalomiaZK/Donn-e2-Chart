@@ -18,19 +18,8 @@ ChartJS.register(
   Legend
 );
 
-const Histogram = () => {
-  const data = {
-    labels: ['0-10', '10-20', '20-30', '30-40', '40-50'],
-    datasets: [
-      {
-        label: 'Nombre d\'occurrences',
-        data: [2, 6, 9, 5, 3],
-        backgroundColor: 'rgba(255, 99, 132, 0.6)',
-        borderColor: 'rgba(255, 99, 132, 1)',
-        borderWidth: 1
-      }
-    ]
-  };
+const Histogram = ({data}) => {
+  
 
   const options = {
     responsive: true,

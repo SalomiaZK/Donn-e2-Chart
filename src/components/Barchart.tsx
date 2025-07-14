@@ -12,17 +12,7 @@ import {
 // Enregistrement des composants
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
-// Données
-const data = {
-  labels: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'],
-  datasets: [
-    {
-      label: 'Fréquentation',
-      data: [12, 19, 3, 5, 2],
-      backgroundColor: 'rgba(75, 192, 192, 0.6)',
-    },
-  ],
-};
+
 
 // Options
 const options = {
@@ -37,6 +27,6 @@ const options = {
   },
 };
 
-export default function MyBarChart() {
+export default function MyBarChart({data}) {
   return <Bar data={data} options={options} />;
 }
